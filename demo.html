@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
+        <title>statemachine</title>
+		<link rel="stylesheet" href="demo.css">
+   </head>  
+    <body data-demo-id="statemachine">
+        <div class="jtk-demo-main">
+            <!-- demo -->
+            <div class="jtk-demo-canvas canvas-wide statemachine-demo jtk-surface jtk-surface-nopan" id="canvas">
+                <div class="w" id="one">1
+                    <div class="ep" action="one"></div>
+                </div>
+                <div class="w" id="two">2
+                    <div class="ep" action="two"></div>
+                </div>
+                <div class="w" id="three">3
+                    <div class="ep" action="three"></div>
+                </div>
+                <div class="w" id="four">4
+                    <div class="ep" action="four"></div>
+                </div>
+                <div class="w" id="five">5
+                    <div class="ep" action="five"></div>
+                </div>
+                <div class="w" id="six">6
+                    <div class="ep" action="six"></div>
+                </div>
+                <div class="w" id="seven">7
+                    <div class="ep" action="seven"></div>
+                </div>
+            </div>
+            <!-- /demo -->
+        </div>
+		<script type="text/javascript">
+			var
+				eps = document.querySelectorAll('.ep'),
+				items = document.querySelectorAll('.w');
+			for(var i = 0; i < items.length;i ++){
+				items[i].style.left = i * 100 + 'px';
+			}
+		</script>
+		<script src="jsPlumb-2.2.6.js"></script>	
+		<script src="demo.js"></script>      
+     </body>
+</html>
